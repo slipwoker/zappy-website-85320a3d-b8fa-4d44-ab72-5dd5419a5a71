@@ -242,382 +242,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
-
-<style data-zappy-section-v2-css="true">
-/* V2 Regenerated Section CSS */
-.index-hero-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow: visible;
-  background-color: #3F3448;
-  color: var(--text-light);
-  display: flex;
-  align-items: center;
-  padding-bottom: 90px;
-}
-
-/* ── Background ── */
-.index-hero-section .index-hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-color: #3F3448;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* ── Scrim ── */
-.index-hero-section .index-hero-scrim {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background-image:
-    linear-gradient(135deg, rgba(63,52,72,0.82) 0%, rgba(43,38,48,0.60) 50%, rgba(43,38,48,0.30) 100%),
-    linear-gradient(180deg, rgba(43,38,48,0.25) 0%, rgba(63,52,72,0.88) 100%);
-}
-
-/* ── Shimmer Decorative Lines ── */
-.index-hero-section .index-hero-shimmer {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  pointer-events: none;
-  overflow: hidden;
-}
-.index-hero-section .shimmer-line {
-  position: absolute;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(216,179,106,0.45) 40%, rgba(170,180,190,0.55) 60%, transparent 100%);
-  opacity: 0.6;
-}
-.index-hero-section .shimmer-line-1 {
-  width: 60%;
-  top: 22%;
-  right: -5%;
-  transform: rotate(-12deg);
-}
-.index-hero-section .shimmer-line-2 {
-  width: 45%;
-  top: 55%;
-  right: 10%;
-  transform: rotate(-8deg);
-  opacity: 0.4;
-}
-.index-hero-section .shimmer-line-3 {
-  width: 30%;
-  bottom: 22%;
-  right: 20%;
-  transform: rotate(-5deg);
-  opacity: 0.3;
-}
-
-/* ── Container ── */
-.index-hero-section .index-hero-container {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 140px 48px 60px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* ── Content Block ── */
-.index-hero-section .index-hero-content {
-  max-width: 640px;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0;
-}
-
-/* ── Eyebrow ── */
-.index-hero-section .index-hero-eyebrow {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
-}
-.index-hero-section .eyebrow-text {
-  font-family: 'Manrope', 'Avenir Next', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-.index-hero-section .eyebrow-line {
-  display: block;
-  width: 36px;
-  height: 1px;
-  background: var(--accent);
-  opacity: 0.75;
-}
-
-/* ── H1 ── */
-.index-hero-section .index-hero-h1 {
-  font-family: 'Cormorant Garamond', 'Canela', Georgia, serif;
-  font-size: clamp(3.2rem, 7vw, 5.5rem);
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: -0.03em;
-  line-height: 0.96;
-  color: var(--text-light) !important;
-  margin: 0 0 20px 0;
-  text-shadow: 0 4px 32px rgba(43,38,48,0.55);
-}
-
-/* ── H3 Subtitle ── */
-.index-hero-section .index-hero-h3 {
-  font-family: 'Cormorant Garamond', 'Canela', Georgia, serif;
-  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.45;
-  color: var(--text-light) !important;
-  opacity: 0.92;
-  margin: 0 0 28px 0;
-  text-shadow: 0 2px 16px rgba(43,38,48,0.5);
-  max-width: 540px;
-}
-
-/* ── Decorative Divider ── */
-.index-hero-section .index-hero-divider {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 24px;
-}
-.index-hero-section .divider-dot {
-  display: block;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--accent);
-  opacity: 0.8;
-}
-.index-hero-section .divider-rule {
-  display: block;
-  width: 80px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--accent) 50%, transparent);
-  opacity: 0.65;
-}
-
-/* ── Body Copy ── */
-.index-hero-section .index-hero-body {
-  margin-bottom: 36px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  text-align: right;
-}
-.index-hero-section .index-hero-tagline {
-  font-family: 'Manrope', 'Avenir Next', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--accent) !important;
-  margin: 0;
-  line-height: 1.4;
-}
-.index-hero-section .index-hero-desc {
-  font-family: 'Manrope', 'Avenir Next', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.75;
-  color: var(--text-light) !important;
-  opacity: 0.88;
-  margin: 0;
-  text-shadow: 0 1px 8px rgba(43,38,48,0.4);
-  max-width: 520px;
-}
-
-/* ── CTAs ── */
-.index-hero-section .index-hero-ctas {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 44px;
-  flex-wrap: wrap;
-}
-.index-hero-section .btn-hero-primary {
-  display: inline-block;
-  background: var(--accent);
-  color: #2B2229 !important;
-  font-family: 'Manrope', 'Avenir Next', sans-serif;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  padding: 15px 38px;
-  border-radius: 0;
-  border: none;
-  text-decoration: none;
-  box-shadow: 0 10px 30px rgba(216,179,106,0.30);
-  transition: all 0.32s ease;
-  white-space: nowrap;
-}
-.index-hero-section .btn-hero-primary:hover {
-  background: #e8c47a;
-  box-shadow: 0 14px 40px rgba(216,179,106,0.45);
-  transform: translateY(-3px);
-}
-.index-hero-section .btn-hero-ghost {
-  display: inline-flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 8px;
-  background: transparent;
-  color: var(--text-light) !important;
-  font-family: 'Manrope', 'Avenir Next', sans-serif;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  padding: 14px 0;
-  border: none;
-  border-bottom: 1px solid rgba(247,245,242,0.45);
-  text-decoration: none;
-  transition: all 0.32s ease;
-  white-space: nowrap;
-}
-.index-hero-section .btn-hero-ghost:hover {
-  border-bottom-color: var(--accent);
-  color: var(--accent) !important;
-}
-.index-hero-section .btn-hero-ghost svg {
-  transition: transform 0.28s ease;
-}
-.index-hero-section .btn-hero-ghost:hover svg {
-  transform: translateX(-4px);
-}
-
-/* ── Stats Row ── */
-.index-hero-section .index-hero-stats {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 0;
-  padding: 20px 24px;
-  background: rgba(63,52,72,0.50);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(170,180,190,0.18);
-  border-radius: 0;
-  flex-wrap: wrap;
-}
-.index-hero-section .stat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 2px;
-  padding: 4px 20px;
-  text-align: right;
-}
-.index-hero-section .stat-number {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 1.375rem;
-  font-weight: 400;
-  font-style: italic;
-  color: var(--accent) !important;
-  line-height: 1.2;
-}
-.index-hero-section .stat-label {
-  font-family: 'Manrope', 'Avenir Next', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: var(--text-light) !important;
-  opacity: 0.7;
-  line-height: 1.4;
-}
-.index-hero-section .stat-sep {
-  display: block;
-  width: 1px;
-  height: 36px;
-  background: rgba(170,180,190,0.30);
-  flex-shrink: 0;
-}
-
-/* ── Bottom Divider ── */
-.index-hero-section .index-hero-divider-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 90px;
-  pointer-events: none;
-  z-index: 5;
-}
-.index-hero-section .index-hero-divider-wrapper svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* ── RESPONSIVE ── */
-@media (max-width: 768px) {
-  .index-hero-section {
-    min-height: 100vh;
-    padding-bottom: 90px;
-  }
-  .index-hero-section .index-hero-container {
-    padding: 110px 20px 48px;
-    justify-content: center;
-  }
-  .index-hero-section .index-hero-content {
-    max-width: 100%;
-    align-items: flex-end;
-  }
-  .index-hero-section .index-hero-h1 {
-    font-size: 3rem;
-    line-height: 1.0;
-  }
-  .index-hero-section .index-hero-h3 {
-    font-size: 1.05rem;
-    max-width: 100%;
-  }
-  .index-hero-section .index-hero-desc {
-    max-width: 100%;
-  }
-  .index-hero-section .index-hero-ctas {
-    gap: 14px;
-    margin-bottom: 32px;
-  }
-  .index-hero-section .btn-hero-primary {
-    padding: 13px 28px;
-    font-size: 0.875rem;
-  }
-  .index-hero-section .btn-hero-ghost {
-    font-size: 0.875rem;
-  }
-  .index-hero-section .index-hero-stats {
-    gap: 0;
-    padding: 14px 12px;
-    justify-content: flex-end;
-  }
-  .index-hero-section .stat-item {
-    padding: 4px 12px;
-  }
-  .index-hero-section .stat-sep {
-    height: 28px;
-  }
-  .index-hero-section .shimmer-line-1,
-  .index-hero-section .shimmer-line-2,
-  .index-hero-section .shimmer-line-3 {
-    display: none;
-  }
-}
-</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -701,16 +325,16 @@
 
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
 
   <button class="phone-header-btn" data-phone="" aria-label="Call">
-    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -1159,87 +783,43 @@
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="zappy-section-0" style="opacity: 1;" data-zappy-content-align="center-right"><style data-zappy-align-style="true">#zappy-section-0 > [data-zappy-align-target] { margin-top: auto !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: 0 !important; align-items: center !important; justify-content: flex-start !important; } #zappy-section-0 > [data-zappy-align-target] > * { margin-left: auto !important; margin-right: 0 !important; }  @media (max-width: 768px) { #zappy-section-0 > [data-zappy-align-target] { align-items: center !important; justify-content: center !important; margin-top: auto !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: auto !important; } #zappy-section-0 > [data-zappy-align-target] > * { margin-left: auto !important; margin-right: auto !important; } }</style>
-  <!-- Background Layer -->
-  <div class="index-hero-bg" style="background-image: url('assets/site-index-hero-image-1.webp'); background-size: cover; background-position: center;"></div>
+    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="zappy-section-0">
+  <!-- Background Image -->
+  <figure class="index-hero-bg-wrapper" aria-hidden="false">
+    <div data-zappy-zoom-wrapper="true" data-element-id="img-1773813685217-fkfkk48xm" data-element-type="image" data-zappy-zoom-wrapper-width="1411px" data-zappy-zoom-wrapper-height="729px" data-zappy-zoom-wrapper-width-mode="full" style="position: absolute !important; overflow: hidden !important; width: 100% !important; max-width: none !important; margin-left: 0px !important; margin-right: 0px !important; height: 100% !important; display: block !important; top: 0px !important; left: 0px !important; z-index: 1 !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Cinematic full-bleed portrait of a sophisticated silver-haired woman in her 50s, photographed in soft natural studio light with a moonlit silver-blue color veil. She has beautifully styled long silver and white hair, wearing elegant minimal luxury clothing. The composition leaves generous open negative space on the right side for text overlay. Mood: radiant, feminine, editorial — not salon commercial. Subtle brushed-silver texture in the darker edges. Premium beauty and wellness brand aesthetic." width="1920" height="1080" src="/assets/site-index-hero-image-1.webp" alt="אישה עם שיער כסוף מרהיב — House of Silver" class="index-hero-bg-img zappy-editable-image" data-element-type="image" data-element-id="img-1773813685217-fkfkk48xm" data-resize-handler-attached="true" style="object-position: 50% 0%; margin: 0px !important; position: absolute !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 108.029% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1"></div>
+  </figure>
 
   <!-- Scrim Overlay -->
   <div class="index-hero-scrim" aria-hidden="true"></div>
 
-  <!-- Decorative silver shimmer lines -->
-  <div class="index-hero-shimmer" aria-hidden="true">
-    <div class="shimmer-line shimmer-line-1"></div>
-    <div class="shimmer-line shimmer-line-2"></div>
-    <div class="shimmer-line shimmer-line-3"></div>
-  </div>
-
-  <!-- Content -->
-  <div class="index-hero-container" data-zappy-align-target="true">
+  <!-- Text Overlay Group -->
+  <div class="index-hero-overlay">
     <div class="index-hero-content">
-
-      <!-- Label / Eyebrow -->
-      <div class="index-hero-eyebrow">
-        <span class="eyebrow-line"></span>
-        <span class="eyebrow-text">Silver Sisters Community</span>
-        <span class="eyebrow-line"></span>
-      </div>
-
-      <!-- Main Headline -->
-      <h1 class="index-hero-h1" style="outline: none; max-width: 1400px; margin-left: auto; margin-right: auto;" data-zappy-text-width="custom">House of Silver</h1>
-
-      <!-- Subtitle -->
-      <h3 class="index-hero-h3" style="text-align: center">המקום שבו שיער כסוף הופך לאמירה של עוצמה, יופי ועצמאות</h3>
-
-      <!-- Divider -->
-      <div class="index-hero-divider" aria-hidden="true">
-        <span class="divider-dot"></span>
-        <span class="divider-rule"></span>
-        <span class="divider-dot"></span>
-      </div>
-
-      <!-- Body Copy -->
-      <div class="index-hero-body">
-        <p class="index-hero-tagline" style="text-align: center">פרק חדש. בחירה נועזת.</p>
-        <p class="index-hero-desc" style="text-align: center">מדע השיער, העצמה רגשית ותוכן עריכתי אספירציונלי — כל זה במקום אחד. הצטרפי לקהילת Silver Sisters ותתחילי את המסע שלך לגרסה הזוהרת ביותר של עצמך.</p>
-      </div>
-
-      <!-- CTAs -->
+      <p class="index-hero-label">פרק חדש. בחירה נועזת.</p>
+      <h1 class="index-hero-h1" style="outline: none; max-width: 1387px; margin-left: auto; margin-right: auto;" data-zappy-text-width="custom">House of Silver</h1>
+      <h3 class="index-hero-subtitle" style="text-align: center;">המקום שבו שיער כסוף הופך לאמירה של עוצמה, יופי ועצמאות</h3>
+      <p class="index-hero-body" style="">מדע השיער, העצמה רגשית ותוכן עריכתי אספירציונלי — כל זה במקום אחד. הצטרפי לקהילת Silver Sisters ותתחילי את המסע שלך לגרסה הזוהרת ביותר של עצמך.</p>
       <div class="index-hero-ctas">
-        <a href="#contact" class="btn-hero-primary" data-element-type="button" data-element-id="btn-1773813569262-sanl8md5k" data-native-element="true">בואי נדבר</a>
-        <a href="#features" class="btn-hero-ghost" data-element-type="button" data-element-id="btn-1773813569262-gugfx935e" data-native-element="true">
-          <span>גלי את העולם</span>
-          <svg data-no-icon-edit="true" aria-hidden="true" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 9H3M7 5L3 9L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        </a>
+        <a href="#contact" class="index-hero-btn-primary" data-element-type="button" data-element-id="btn-1773813685214-yiokpo9yi" data-native-element="true">בואי נדבר</a>
+        <a href="#features" class="index-hero-btn-secondary" data-element-type="button" data-element-id="btn-1773813685214-j28xyz2ps" data-native-element="true">גלי את העולם</a>
       </div>
-
-      <!-- Stats Row -->
-      <div class="index-hero-stats">
-        <div class="stat-item">
-          <span class="stat-number">17,000+</span>
-          <span class="stat-label">חברות בקהילה</span>
-        </div>
-        <span class="stat-sep" aria-hidden="true"></span>
-        <div class="stat-item" style="text-align: center">
-          <span class="stat-number">מדע</span>
-          <span class="stat-label">אבחון כימי ומרקם</span>
-        </div>
-        <span class="stat-sep" aria-hidden="true"></span>
-        <div class="stat-item">
-          <span class="stat-number">עצמה</span>
-          <span class="stat-label">מסע אישי מעצים</span>
-        </div>
-      </div>
-
     </div>
   </div>
 
   <!-- Bottom Divider -->
-  <div class="index-hero-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1440 90" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,90 L0,55 Q120,38 240,52 T480,44 Q600,50 720,40 T960,48 Q1080,42 1200,50 T1440,45 L1440,90 Z" fill="#F7F5F2"></path>
+  <div class="index-hero-divider-wrapper" aria-hidden="true">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="pearlDivider" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#F7F5F2"></stop>
+          <stop offset="38%" stop-color="#EDE8E3"></stop>
+          <stop offset="62%" stop-color="#F0EBE6"></stop>
+          <stop offset="100%" stop-color="#F7F5F2"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,90 L0,52 Q120,30 280,48 Q420,62 560,38 Q700,18 860,34 Q1020,50 1160,28 Q1300,10 1440,22 L1440,90 Z" fill="#F7F5F2"></path>
     </svg>
   </div>
-
 </section>
 
 <section id="features" class="index-features-section" data-layout-spec="בית-features" dir="rtl">
@@ -1308,7 +888,7 @@
 
   <!-- Bottom SVG Divider -->
   <div class="index-features-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1440 80" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,80 L0,52 Q60,44 120,50 T240,46 Q300,50 360,44 T480,48 Q540,44 600,50 T720,46 Q780,50 840,44 T960,48 Q1020,44 1080,50 T1200,46 Q1260,50 1320,44 T1440,50 L1440,80 Z" fill="#3F3448" opacity="0.18"></path>
       <path d="M0,80 L0,60 Q80,54 160,60 T320,56 Q400,60 480,54 T640,58 Q720,54 800,60 T960,56 Q1040,60 1120,54 T1280,58 Q1360,54 1440,60 L1440,80 Z" fill="#3F3448" opacity="0.32"></path>
       <path d="M0,80 L0,68 Q120,62 240,68 T480,64 Q600,68 720,62 T960,66 Q1080,62 1200,68 T1440,66 L1440,80 Z" fill="#3F3448"></path>
@@ -1327,7 +907,7 @@
       <div class="index-benefits-list">
         <article class="index-benefits-item">
           <div class="index-benefits-icon-wrap">
-            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <circle cx="14" cy="14" r="12" stroke="currentColor" stroke-width="1.5"></circle>
               <path d="M9 14l3.5 3.5L19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
@@ -1340,7 +920,7 @@
 
         <article class="index-benefits-item">
           <div class="index-benefits-icon-wrap">
-            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M14 4C14 4 6 8 6 15a8 8 0 0016 0c0-7-8-11-8-11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
               <path d="M14 13v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
             </svg>
@@ -1353,7 +933,7 @@
 
         <article class="index-benefits-item">
           <div class="index-benefits-icon-wrap">
-            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="4" y="6" width="20" height="16" rx="1" stroke="currentColor" stroke-width="1.5"></rect>
               <path d="M4 11h20" stroke="currentColor" stroke-width="1.5"></path>
               <path d="M9 6V4M19 6V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
@@ -1378,13 +958,13 @@
 
   <!-- Bottom angled divider -->
   <div class="index-benefits-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1440 90" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <lineargradient id="ib-divider-grad" x1="0" y1="0" x2="1" y2="0">
+        <linearGradient id="ib-divider-grad" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stop-color="#F7F5F2"></stop>
           <stop offset="40%" stop-color="#EDE9E4"></stop>
           <stop offset="100%" stop-color="#F7F5F2"></stop>
-        </lineargradient>
+        </linearGradient>
       </defs>
       <path d="M0,90 L0,55 L1440,10 L1440,90 Z" fill="#F7F1ED"></path>
       <path d="M0,55 L1440,10" stroke="rgba(216,179,106,0.28)" stroke-width="1"></path>
@@ -1446,21 +1026,21 @@
 
   <!-- Bottom Divider: smoky-plum scalloped -->
   <div class="index-gallery-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1440 90" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <lineargradient id="galleryDividerGrad" x1="0" y1="0" x2="1" y2="0">
+        <linearGradient id="galleryDividerGrad" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stop-color="#3F3448"></stop>
           <stop offset="40%" stop-color="#4A3655"></stop>
           <stop offset="100%" stop-color="#3F3448"></stop>
-        </lineargradient>
-        <radialgradient id="pearlHighlight1" cx="30%" cy="100%" r="30%">
+        </linearGradient>
+        <radialGradient id="pearlHighlight1" cx="30%" cy="100%" r="30%">
           <stop offset="0%" stop-color="rgba(247,245,242,0.13)"></stop>
           <stop offset="100%" stop-color="rgba(247,245,242,0)"></stop>
-        </radialgradient>
-        <radialgradient id="pearlHighlight2" cx="75%" cy="100%" r="25%">
+        </radialGradient>
+        <radialGradient id="pearlHighlight2" cx="75%" cy="100%" r="25%">
           <stop offset="0%" stop-color="rgba(216,179,106,0.10)"></stop>
           <stop offset="100%" stop-color="rgba(216,179,106,0)"></stop>
-        </radialgradient>
+        </radialGradient>
       </defs>
       <!-- Scalloped edge path filling bottom -->
       <path d="M0,90 L0,42 Q40,28 80,42 Q120,56 160,38 Q200,20 240,38 Q280,56 320,38 Q360,20 400,38 Q440,56 480,38 Q520,20 560,38 Q600,56 640,38 Q680,20 720,38 Q760,56 800,38 Q840,20 880,38 Q920,56 960,38 Q1000,20 1040,38 Q1080,56 1120,38 Q1160,20 1200,38 Q1280,56 1360,38 L1440,40 L1440,90 Z" fill="#3F3448"></path>
@@ -1551,7 +1131,7 @@
         <span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1440 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,60 L0,42 Q120,36 240,44 T480,38 Q600,42 720,36 T960,40 Q1080,38 1200,42 T1440,38 L1440,60 Z" fill="#F7F1ED"></path>
     </svg>
   </div>
@@ -1593,13 +1173,13 @@
     </div>
   </div>
   <div class="index-stats-divider-wrapper" aria-hidden="true">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1440 120" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <lineargradient id="statsArcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <linearGradient id="statsArcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" stop-color="#D8B36A" stop-opacity="0.85"></stop>
           <stop offset="45%" stop-color="#C4A0C0" stop-opacity="0.9"></stop>
           <stop offset="100%" stop-color="#3F3448" stop-opacity="1"></stop>
-        </lineargradient>
+        </linearGradient>
       </defs>
       <path d="M0,120 L0,55 Q180,10 360,45 Q540,80 720,30 Q900,-10 1080,40 Q1260,85 1440,50 L1440,120 Z" fill="#3F3448"></path>
       <path d="M0,120 L0,70 Q200,35 400,60 Q600,85 720,45 Q900,10 1100,55 Q1280,85 1440,65 L1440,120 Z" fill="#3F3448" opacity="0.92"></path>
@@ -1610,7 +1190,7 @@
 <section id="cta" class="index-cta-section" data-layout-spec="בית-cta" dir="rtl">
   <!-- Decorative hair-strand SVG linework -->
   <div class="index-cta-strands" aria-hidden="true">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 600 700" fill="none" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMidYMid meet">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 600 700" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
       <path d="M580,0 Q540,180 560,350 Q580,520 550,700" stroke="rgba(170,180,190,0.18)" stroke-width="1.5" fill="none"></path>
       <path d="M560,0 Q510,200 530,380 Q550,560 520,700" stroke="rgba(216,179,106,0.12)" stroke-width="1" fill="none"></path>
       <path d="M540,0 Q490,220 510,400 Q530,580 500,700" stroke="rgba(170,180,190,0.10)" stroke-width="1" fill="none"></path>
@@ -1633,7 +1213,7 @@
 
       <div class="index-cta-reassurance">
         <div class="index-cta-reassurance-icon" aria-hidden="true">
-          <svg data-element-type="icon" data-icon-type="svg" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="11" cy="11" r="10" stroke="currentColor" stroke-width="1.4"></circle>
             <path d="M7 11.5L9.8 14L15 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
@@ -1672,7 +1252,7 @@
           </div>
           <button type="submit" class="btn-primary index-cta-submit">
             <span>שלחי הודעה</span>
-            <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M13 8H3M7 4L3 8L7 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </button>
@@ -1867,6 +1447,34 @@
       if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileLangMenu); }
       else { initMobileLangMenu(); }
       window.addEventListener('resize', function() { clearTimeout(window._mlrt); window._mlrt = setTimeout(initMobileLangMenu, 250); });
+    })();
+    </script>
+
+    <script>
+    (function(){
+      if(window.innerWidth>768)return;
+      function fixZW(){
+        document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){
+          var cw=w.style.getPropertyValue('width');
+          if(!cw||cw==='100%')return;
+          w.style.setProperty('width','100%','important');
+          w.style.setProperty('max-width','100%','important');
+          w.style.setProperty('height','auto','important');
+          var img=w.querySelector('img');
+          if(img){
+            img.style.setProperty('position','relative','important');
+            img.style.setProperty('width','100%','important');
+            img.style.setProperty('height','auto','important');
+            img.style.setProperty('max-width','100%','important');
+            img.style.setProperty('max-height','400px','important');
+            img.style.setProperty('object-fit','cover','important');
+            img.style.setProperty('left','0','important');
+            img.style.setProperty('top','0','important');
+          }
+        });
+      }
+      if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fixZW);
+      else setTimeout(fixZW,50);
     })();
     </script>
 </body>
