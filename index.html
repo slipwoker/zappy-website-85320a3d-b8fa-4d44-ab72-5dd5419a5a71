@@ -783,17 +783,17 @@
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="zappy-section-0">
+    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="zappy-section-0" data-zappy-content-align="center-right" style="min-height: 729px !important;"><style data-zappy-align-style="true">#zappy-section-0 > [data-zappy-align-target] { margin-top: auto !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: 0 !important; align-items: center !important; justify-content: flex-start !important; } #zappy-section-0 > [data-zappy-align-target] > * { margin-left: auto !important; margin-right: 0 !important; justify-content: center !important; }  @media (max-width: 768px) { #zappy-section-0 > [data-zappy-align-target] { align-items: center !important; justify-content: center !important; margin-top: auto !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: auto !important; } #zappy-section-0 > [data-zappy-align-target] > * { margin-left: auto !important; margin-right: auto !important; } }</style>
   <!-- Background Image -->
   <figure class="index-hero-bg-wrapper" aria-hidden="false">
-    <div data-zappy-zoom-wrapper="true" data-element-id="img-1773813685217-fkfkk48xm" data-element-type="image" data-zappy-zoom-wrapper-width="1411px" data-zappy-zoom-wrapper-height="729px" data-zappy-zoom-wrapper-width-mode="full" style="position: absolute !important; overflow: hidden !important; width: 100% !important; max-width: none !important; margin-left: 0px !important; margin-right: 0px !important; height: 100% !important; display: block !important; top: 0px !important; left: 0px !important; z-index: 1 !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Cinematic full-bleed portrait of a sophisticated silver-haired woman in her 50s, photographed in soft natural studio light with a moonlit silver-blue color veil. She has beautifully styled long silver and white hair, wearing elegant minimal luxury clothing. The composition leaves generous open negative space on the right side for text overlay. Mood: radiant, feminine, editorial — not salon commercial. Subtle brushed-silver texture in the darker edges. Premium beauty and wellness brand aesthetic." width="1920" height="1080" src="/assets/site-index-hero-image-1.webp" alt="אישה עם שיער כסוף מרהיב — House of Silver" class="index-hero-bg-img zappy-editable-image" data-element-type="image" data-element-id="img-1773813685217-fkfkk48xm" data-resize-handler-attached="true" style="object-position: 50% 0%; margin: 0px !important; position: absolute !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 108.029% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1"></div>
+    <div data-zappy-zoom-wrapper="true" data-element-id="img-1773813685217-fkfkk48xm" data-element-type="image" data-zappy-zoom-wrapper-width="1411px" data-zappy-zoom-wrapper-height="729px" data-zappy-zoom-wrapper-width-mode="full" style="position: absolute !important; overflow: hidden !important; width: 100% !important; max-width: none !important; margin-left: 0px !important; margin-right: 0px !important; height: 100% !important; display: block !important; top: 0px !important; left: 0px !important; z-index: 1 !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Cinematic full-bleed portrait of a sophisticated silver-haired woman in her 50s, photographed in soft natural studio light with a moonlit silver-blue color veil. She has beautifully styled long silver and white hair, wearing elegant minimal luxury clothing. The composition leaves generous open negative space on the right side for text overlay. Mood: radiant, feminine, editorial — not salon commercial. Subtle brushed-silver texture in the darker edges. Premium beauty and wellness brand aesthetic." width="1920" height="1080" src="/assets/site-index-hero-image-1.webp" alt="אישה עם שיער כסוף מרהיב — House of Silver" class="index-hero-bg-img zappy-editable-image" data-element-type="image" data-element-id="img-1773813685217-fkfkk48xm" style="object-position: 50% 0%; margin: 0px !important; position: absolute !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 108.029% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1" data-resize-handler-attached="true"></div>
   </figure>
 
   <!-- Scrim Overlay -->
   <div class="index-hero-scrim" aria-hidden="true"></div>
 
   <!-- Text Overlay Group -->
-  <div class="index-hero-overlay">
+  <div class="index-hero-overlay" data-zappy-align-target="true">
     <div class="index-hero-content">
       
       <h1 class="index-hero-h1" style="outline: none; max-width: 1387px; margin-left: auto; margin-right: auto;" data-zappy-text-width="custom">House of Silver</h1>
@@ -1330,12 +1330,12 @@
       var nb=document.querySelector('nav.navbar,.navbar:not(.zappy-catalog-menu)');
       var cm=document.querySelector('.zappy-catalog-menu,#zappy-catalog-menu');
       if(!nb)return;
-      var fb='rgba(63,52,72,0.85)';
+      var fb='rgba(247,245,242,0.85)';
       var th=60;
       var rs=getComputedStyle(document.documentElement);
       var td=rs.getPropertyValue('--text-dark').trim()||'#1a1a1a';
       var tl=rs.getPropertyValue('--text-light').trim()||'#ffffff';
-      var st=false?td:tl;
+      var st=true?td:tl;
       nb.style.transition='background 0.3s ease,backdrop-filter 0.3s ease,-webkit-backdrop-filter 0.3s ease,box-shadow 0.3s ease';
       if(cm)cm.style.transition='background 0.3s ease,backdrop-filter 0.3s ease,-webkit-backdrop-filter 0.3s ease';
       var neSel='a,.navbar-brand,.navbar-brand a,.dropdown-toggle,.mobile-toggle,.phone-header-btn,.mobile-hamburger-btn,.mobile-close-btn,.mobile-submenu-toggle,.nav-link';
